@@ -1,0 +1,24 @@
+.properties-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: flex-start; 
+}
+
+.property-card {
+  flex: 1 1 calc(33.33% - 32px); 
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .property-card {
+    flex: 1 1 calc(50% - 32px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .property-card {
+    flex: 1 1 calc(100% - 32px);
+  }
+}
